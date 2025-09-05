@@ -1,0 +1,59 @@
+name: boulevard_beauty
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.8.1 <4.0.0' # يفضل تحديد نطاق SDK للوضوح
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations: # يجب أن تكون بنفس مستوى 'flutter:'
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  shared_preferences: ^2.2.2
+  lottie: ^2.7.0
+  intl: ^0.20.2
+  url_launcher: ^6.1.11
+  google_fonts: ^4.0.4 # إذا كنت تستخدم خطوط جوجل من الإنترنت، وإلا يمكن إزالته إذا كنت تعتمد على الخطوط المحلية فقط
+  pin_code_fields: ^8.0.1
+  uuid: ^4.0.0
+  share_plus: ^7.0.2
+  image_picker: ^1.0.4
+  carousel_slider: ^5.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon.png"
+
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/fonts/
+    - assets/animations/
+
+  fonts:
+    - family: Almarai # الخط الرئيسي للنصوص العربية
+      fonts:
+        - asset: assets/fonts/Almarai-Regular.ttf
+        - asset: assets/fonts/Almarai-Bold.ttf
+          weight: 700
+    - family: GreatVibes # الخط الجديد لشعار Boulevard
+      fonts:
+        - asset: assets/fonts/GreatVibes-Regular.ttf # تأكد من وضع هذا الملف في assets/fonts/
+    - family: DancingScript # الخط الحالي لشعار Boulevard، يمكن إبقاؤه كخيار أو إزالته إذا لم يعد مستخدماً
+      fonts:
+        - asset: assets/fonts/DancingScript-Regular.ttf
